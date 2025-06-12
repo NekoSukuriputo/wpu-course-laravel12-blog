@@ -10,14 +10,18 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
     return view('about', [
-        "title" => "About Page"
+        "title" => "About"
     ]);
 });
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('contact', [
+        "title" => "Contact"
+    ]);
 });
 
 Route::get('/blog', function () {
-    return view('blog');
+    return view('blog', [
+        "title" => "Blog"
+    ]);
 });
